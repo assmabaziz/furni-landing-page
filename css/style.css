@@ -165,9 +165,8 @@ nav {
       cursor: pointer;
       transition: var(--main-transition);
       position: relative;
-      /* overflow: hidden; */
       .product-wrapper-image {
-      transition: var(--main-transition);
+        transition: var(--main-transition);
       }
       .overlay {
         position: absolute;
@@ -176,7 +175,7 @@ nav {
         right: 0;
         height: 60%;
         border-radius: 1rem;
-        background-color: rgba(159, 160, 160, 0.192);
+        background-color: #dce5e457;
         transform: translateY(130%);
         transition: var(--main-transition);
         i {
@@ -192,6 +191,57 @@ nav {
         }
         .product-wrapper-image {
           transform: translateY(-10%);
+        }
+      }
+    }
+  }
+}
+/*======================================== Why Choose Us Section ==================================*/
+.why-choose-us {
+  .container {
+    .why-choose-us-text {
+      .why-choose-us-text-content {
+        .why-choose-us-text-content-box {
+          .why-choose-us-text-content-box-icon {
+            position: relative;
+            width: fit-content;
+            z-index: 3;
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              right: 0px;
+              height: 30px;
+              width: 30px;
+              border-radius: 50%;
+              background-color: var(--color-gray);
+              z-index: -1;
+            }
+          }
+        }
+      }
+    }
+    .why-choose-us-image {
+      width: 80%;
+      margin: 0 0 0 auto;
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        background-image: url("../images/dots-yellow.svg");
+        background-size: cover;
+        background-position: center;
+        width: 41%;
+        height: 40%;
+        position: absolute;
+        top: -12%;
+       left: -15%;
+        z-index: 1;
+      }
+      .why-choose-us-image-wrapper {
+        img {
+          position: relative;
+        z-index: 2;
         }
       }
     }
