@@ -231,19 +231,76 @@ nav {
         background-image: url("../images/dots-yellow.svg");
         background-size: cover;
         background-position: center;
-        width: 41%;
+        width: 61%;
         height: 40%;
         position: absolute;
         top: -12%;
-       left: -15%;
+        left: -15%;
         z-index: 1;
       }
       .why-choose-us-image-wrapper {
         img {
           position: relative;
-        z-index: 2;
+          z-index: 2;
         }
       }
     }
+  }
+}
+/*======================================== We Help You Section ==================================*/
+.we-help-you {
+  .container {
+    .we-help-you-image {
+      .we-help-you-image-wrapper {
+        position: relative;
+        &::after {
+          content: "";
+          display: block;
+          background-image: url("../images/dots-green.svg");
+          background-size: cover;
+          background-position: center;
+          width: 65%;
+          height: 40%;
+          position: absolute;
+          top: -12%;
+          left: -20%;
+          z-index: 1;
+        }
+        img {
+          position: relative;
+          z-index: 3;
+        }
+      }
+      .last-image {
+        position: relative;
+        img {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: -70%;
+          width: 170%;
+          z-index: 50;
+        }
+      }
+    }
+.we-help-you-text {
+  .we-help-you-text-paragraph{
+ul  {
+  list-style-type: circle;
+}
+  }
+  .we-help-you-text-button {
+     button {
+          font-weight: 600;
+          background-color: var(--black-color);
+          color: var(--white-color);
+          transition: var(--main-transition);
+          &:hover {
+            box-shadow: 1px 1px 100px -12px rgba(34, 60, 80, 0.49);
+          }
+        }
+  }
+}
   }
 }
