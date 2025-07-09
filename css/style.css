@@ -284,14 +284,14 @@ nav {
         }
       }
     }
-.we-help-you-text {
-  .we-help-you-text-paragraph{
-ul  {
-  list-style-type: circle;
-}
-  }
-  .we-help-you-text-button {
-     button {
+    .we-help-you-text {
+      .we-help-you-text-paragraph {
+        ul {
+          list-style-type: circle;
+        }
+      }
+      .we-help-you-text-button {
+        button {
           font-weight: 600;
           background-color: var(--black-color);
           color: var(--white-color);
@@ -300,7 +300,44 @@ ul  {
             box-shadow: 1px 1px 100px -12px rgba(34, 60, 80, 0.49);
           }
         }
+      }
+    }
   }
 }
+/*======================================== Popular Product Section ==================================*/
+.popular-product {
+  .container {
+    .popular-product-box {
+      .popular-product-box-image {
+        border-radius: 1rem;
+        position: relative;
+        z-index: 3;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 15px;
+          right: 5px;
+          left: 5px;
+          bottom: 15px;
+          background-color: #dce5e4;
+          border-radius: 1rem;
+          z-index: -1;
+        }
+        img {
+          width: 115%;
+        }
+      }
+      .popular-product-box-content {
+        span {
+          a {
+            color: var(--black-color);
+            transition: var(--main-transition);
+            &:hover {
+            color: var(--color-gray);
+            }
+          }
+        }
+      }
+    }
   }
 }
