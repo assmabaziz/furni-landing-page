@@ -364,7 +364,7 @@ main {
             height: 100%;
             /* background-color: rgb(69, 70, 70); */
             text-align: center;
-  
+
             .carousel-caption {
               .carousel-caption-wrapper {
                 p {
@@ -382,11 +382,11 @@ main {
             }
           }
         }
-        .carousel-control-next{
-        span.carousel-control-next-iconn {
-          height: 40px;
-          width: 40px;
-          border-radius: 50%;
+        .carousel-control-next {
+          span.carousel-control-next-iconn {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
             background-color: var(--color-gray);
             transition: var(--main-transition);
             &:hover {
@@ -394,11 +394,11 @@ main {
             }
           }
         }
-         .carousel-control-prev{
-        span.carousel-control-prev-iconn {
-          height: 40px;
-          width: 40px;
-          border-radius: 50%;
+        .carousel-control-prev {
+          span.carousel-control-prev-iconn {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
             background-color: var(--color-gray);
             transition: var(--main-transition);
             &:hover {
@@ -409,6 +409,92 @@ main {
       }
     }
   }
-  /*======================================== Blog Section ==================================*/
-
+}
+/*======================================== Footer Section ==================================*/
+footer {
+  .subscribe-to-newsletter {
+    .subscribe-form {
+      .subscribe-form-inputs {
+        .input-group.input-group-lg {
+          input {
+            &::placeholder {
+              font-size: 1rem;
+            }
+            &:focus {
+              box-shadow: none;
+              border: 1px solid var(--black-color);
+            }
+          }
+        }
+        button {
+          color: var(--white-color);
+          background-color: var(--main-color);
+        }
+      }
+    }
+    .subscribe-image {
+      background-color: aquamarine;
+      position: relative;
+      img {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: -150px;
+        width: 100%;
+      }
+    }
+  }
+  .furni-links {
+    .furni-links-social {
+      .socail-title {
+        h4 {
+          position: relative;
+          width: fit-content;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 5px;
+            right: -10px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--color-gray);
+          }
+        }
+      }
+      .social-icons {
+        span {
+          font-size: 1.2rem;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          background-color: var(--color-gray);
+          transition: var(--main-transition);
+          &:hover {
+            background-color: var(--main-color);
+            color: var(--white-color);
+          }
+        }
+      }
+    }
+    .furni-links-lists {
+      ul {
+        li {
+          padding: 0 0 1rem 0;
+          a {
+            text-decoration: none;
+            color: var(--black-color);
+            transition: var(--main-transition);
+            &:hover {
+              color: var(--color-gray);
+            }
+          }
+        }
+      }
+    }
+  }
 }
